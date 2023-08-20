@@ -1,1 +1,7 @@
 @use "../../styles/variables"as *;
+
+.Hero {
+  background-color: $bgColor;
+  height: 100vh;
+  max-height: 1030px;
+}
