@@ -10,7 +10,6 @@
   line-height: 1.5;
   font-weight: 400;
   color: $primaryTextColor;
-  background-color: $bgColor;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,6 +21,7 @@
 a {
   color: $secondaryTextColor;
   text-decoration: none;
+  transition: all 0.25s;
 }
 
 a:hover {
