@@ -1,0 +1,76 @@
+@use "../../styles/variables"as *;
+
+.Button {
+  all: unset;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    @extend %pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.Button,
+.Button:disabled {
+  padding: 16px 22px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $primaryTextColor;
+  background: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.25s;
+  outline: none;
+}
+
+.Button--primary,
+.Button--primary:disabled {
+  padding: 16px 22px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $primaryTextColor;
+  background: none;
+  border-radius: 15px;
+  border: 1px solid #FFF;
+}
+
+.Button--primary:hover,
+.Button--primary:active {
+  color: $accentTextColor;
+  border-color: $accentTextColor;
+}
+
+.Button--accent,
+.Button--accent:disabled {
+  padding: 20px 30px;
+  font-family: 'GTWalsheimPro', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: $bgColor;
+  background: $gradient;
+  border-radius: 20px;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Button--accent::before {
+  background: #1DD844;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+  filter: blur(8px);
+}
+
+.Button--accent:disabled {
+  color: $disabledTextColor;
+
+  &::before {
+    display: none;
+  }
+}
+
+.Button--accent:active:not(:disabled) {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}

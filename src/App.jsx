@@ -1,13 +1,16 @@
 import "./App.scss";
-import ButtonDefault from "./components/ButtonDefault/ButtonDefault";
-import ButtonAccent from "./components/ButtonAccent/ButtonAccent";
+import Button from "./components/Button/Button";
+import Hero from "./components/Hero/Hero";
+import Info from "./components/Info/Info";
 
 function App() {
   return (
     <>
-      <h1>Hello</h1>
-      <ButtonDefault>Личный кабинет</ButtonDefault>
-      <ButtonAccent>Начать зарабатывать на NFT</ButtonAccent>
+      <Hero />
+      <Info />
+      <Button type="primary">Личный кабинет</Button>
+      <Button type="accent">Начать зарабатывать на NFT</Button>
+      <button>Просто кнопка</button>
     </>
   );
 }
