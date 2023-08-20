@@ -15,5 +15,6 @@
       "withStory": false,
       "withLazy": false
     }
-  }
+  },
+  "usesStyledComponents": false
 }
