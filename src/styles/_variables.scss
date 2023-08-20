@@ -10,3 +10,11 @@ $gradient: linear-gradient(141deg, #1DD844 0%, #CBF62E 100%);
   display: block;
   content: '';
 }
+
+%ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

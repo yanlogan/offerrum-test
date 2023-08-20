@@ -1,0 +1,27 @@
+@use '../../styles/variables'as *;
+
+.Header {}
+
+.Header__wrapper {
+  display: flex;
+}
+
+.Header__nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.Header__nav ul {
+  @extend %ul;
+  margin-right: 150px;
+}
+
+.Header__navItem {
+  font-size: 23px;
+  line-height: 120%;
+
+  &:not(:last-child) {
+    margin-right: 105px;
+  }
+}
