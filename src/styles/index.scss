@@ -1,0 +1,76 @@
+@use "fonts";
+@use "variables"as *;
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $primaryTextColor;
+  background-color: $bgColor;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: $secondaryTextColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $primaryTextColor;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    @extend %pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+button,
+button:disabled {
+  padding: 16px 22px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $primaryTextColor;
+  background: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.25s;
+  outline: none;
+}
+
+button:hover,
+button:active {
+  outline: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button:focus:not(:-moz-focusring) {
+  outline: none;
+}

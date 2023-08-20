@@ -1,0 +1,12 @@
+$bgColor: #1D2532;
+$primaryTextColor: #fff;
+$secondaryTextColor: #CECECE;
+$disabledTextColor: rgba(36, 36, 36, 0.50);
+$accentTextColor: #C3F33B;
+$gradient: linear-gradient(141deg, #1DD844 0%, #CBF62E 100%);
+
+%pseudo {
+  position: absolute;
+  display: block;
+  content: '';
+}
