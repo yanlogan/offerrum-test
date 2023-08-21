@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./styles/index.scss";
 
+// 100vh is calc(var(--vh, 1vh) * 100)
 const setVh = () => {
   document.documentElement.style.setProperty(
     "--vh",
