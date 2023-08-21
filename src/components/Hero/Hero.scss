@@ -1,8 +1,29 @@
 @use "../../styles/variables"as *;
 
-.Hero {
-  background-color: $bgColor;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  max-height: 1030px;
+.Hero__wrapper {
+  position: relative;
+  padding-top: 218px;
+  padding-bottom: 270px;
+}
+
+.Hero__text {
+  margin-bottom: 75px;
+}
+
+.Hero__title {
+  max-width: 717px;
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 105%;
+  letter-spacing: -2.16px;
+}
+
+.Hero__subtitle {
+  max-width: 499px;
+  margin: 0;
+  font-size: 23px;
+  line-height: 120%;
+  color: $secondaryTextColor;
 }
