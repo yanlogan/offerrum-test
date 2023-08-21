@@ -10,8 +10,8 @@
 
 .Intro::before {
   --gradientCircleRadius: 414.902px;
-  --gradientCircleTop: -188.98px;
-  --gradientCircleLeft: 100.9px;
+  --gradientCircleTop: -150px;
+  --gradientCircleLeft: 50px;
   @extend %gradientCircle;
 }
 
