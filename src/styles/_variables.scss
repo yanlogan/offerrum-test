@@ -3,7 +3,8 @@ $primaryTextColor: #fff;
 $secondaryTextColor: #CECECE;
 $disabledTextColor: rgba(36, 36, 36, 0.50);
 $accentTextColor: #C3F33B;
-$gradient: linear-gradient(141deg, #1DD844 0%, #CBF62E 100%);
+$gradient1: linear-gradient(141deg, #1DD844 0%, #CBF62E 100%);
+$gradient2: linear-gradient(171deg, rgba(95, 56, 255, 0.35) 0%, rgba(255, 14, 222, 0.35) 100%);
 
 :root {
   --vh: 1vh;
@@ -21,4 +22,20 @@ $gradient: linear-gradient(141deg, #1DD844 0%, #CBF62E 100%);
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+%gradientCircle {
+  --gradientCircleRadius: 0px;
+  --gradientCircleTop: 0px;
+  --gradientCircleLeft: 0px;
+  @extend %pseudo;
+  top: var(--gradientCircleTop);
+  left: var(--gradientCircleLeft);
+  width: var(--gradientCircleRadius);
+  height: var(--gradientCircleRadius);
+  border-radius: var(--gradientCircleRadius);
+  background: $gradient2;
+  transform: rotate(11.969deg);
+  filter: blur(86px);
+  z-index: 1;
 }
