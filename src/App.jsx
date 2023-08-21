@@ -1,13 +1,13 @@
 import "./App.scss";
-import Hero from "./components/Hero/Hero";
+import Intro from "./components/Intro/Intro";
 import Info from "./components/Info/Info";
 
 function App() {
   return (
-    <>
-      <Hero />
+    <main>
+      <Intro />
       <Info />
-    </>
+    </main>
   );
 }
 

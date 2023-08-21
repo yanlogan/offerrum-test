@@ -1,0 +1,21 @@
+@use '../../styles/variables'as *;
+
+.Intro {
+  position: relative;
+  // height: max-content;
+  // max-height: 1030px;
+  margin-bottom: 110px;
+  background-color: $bgColor;
+}
+
+.Intro::before {
+  --gradientCircleRadius: 414.902px;
+  --gradientCircleTop: -188.98px;
+  --gradientCircleLeft: 100.9px;
+  @extend %gradientCircle;
+}
+
+.Intro__content {
+  position: relative;
+  z-index: 2;
+}
