@@ -1,15 +1,17 @@
 @use '../../styles/variables'as *;
 
-.Header {}
+.Header {
+  padding-top: 30px;
+}
 
 .Header__wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Header__nav {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
 }
 
 .Header__nav ul {
