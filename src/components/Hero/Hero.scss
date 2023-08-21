@@ -3,5 +3,6 @@
 .Hero {
   background-color: $bgColor;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   max-height: 1030px;
 }
