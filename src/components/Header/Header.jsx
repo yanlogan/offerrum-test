@@ -15,10 +15,10 @@ const Header = () => {
                 <a href="/">Главная</a>
               </li>
               <li className="Header__navItem">
-                <a href="#info">Что даст обучение</a>
+                <a href="#info">Что&nbsp;даст&nbsp;обучение</a>
               </li>
             </ul>
-            <Button type="primary">Личный кабинет</Button>
+            <Button type="primary">Личный&nbsp;кабинет</Button>
           </nav>
         </div>
       </Container>
