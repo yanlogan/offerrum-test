@@ -1,0 +1,70 @@
+@use '../../styles/variables'as *;
+
+.HeroBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 805px;
+  height: 700px;
+  z-index: -1;
+}
+
+.HeroBg__content {
+  position: relative;
+}
+
+.HeroBg__content>* {
+  position: absolute;
+}
+
+.HeroBg__gradient {
+  --gradientCircleRadius: 474.935px;
+  --gradientCircleTop: 250px;
+  --gradientCircleLeft: 270px;
+  @extend %gradientCircle;
+  background: $gradient3;
+  z-index: 2;
+}
+
+.HeroBg__businessman {
+  top: 101px;
+  left: 222px;
+  z-index: 3;
+}
+
+.HeroBg__piggy {
+  top: 230px;
+  left: 273px;
+  z-index: 1;
+}
+
+.HeroBg__money {
+  top: 358px;
+  left: 633px;
+  z-index: 4;
+}
+
+.HeroBg__emoji {
+  top: 139px;
+  left: 333px;
+  z-index: 1;
+}
+
+.HeroBg__lightning1 {
+  top: 132px;
+  left: 667px;
+  z-index: 1;
+}
+
+.HeroBg__lightning2 {
+  top: 544px;
+  left: 180px;
+  z-index: 1;
+}
+
+.HeroBg__gradientCircleGreen {
+  top: 162px;
+  left: -4px;
+  z-index: 2;
+}
