@@ -33,17 +33,19 @@ $infoCardBackBlur: 27.5px;
 }
 
 %gradientCircle {
-  --gradientCircleRadius: 0px;
-  --gradientCircleTop: 0px;
-  --gradientCircleLeft: 0px;
+  top: var(--top);
+  left: var(--left);
+  bottom: var(--bottom);
+  right: var(--right);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  filter: blur(var(--blur));
+  transform: rotate(var(--rotate));
+  z-index: var(--index);
+}
+
+%gradientBackdrop {
   @extend %pseudo;
-  top: var(--gradientCircleTop);
-  left: var(--gradientCircleLeft);
-  width: var(--gradientCircleRadius);
-  height: var(--gradientCircleRadius);
-  border-radius: var(--gradientCircleRadius);
-  background: $gradient2;
-  transform: rotate(11.969deg);
-  filter: blur(86px);
-  z-index: 1;
+  @extend %gradientCircle;
 }
