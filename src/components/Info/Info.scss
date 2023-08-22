@@ -6,6 +6,10 @@
   padding-bottom: 190px;
 }
 
+.Info>.Container {
+  position: relative;
+}
+
 .Info__wrapper {
   position: relative;
   display: grid;
@@ -27,13 +31,13 @@
 }
 
 .Info__wrapper::before {
-  --top: -80px;
-  --right: -40px;
+  --top: -35px;
+  --right: 10px;
 }
 
 .Info__wrapper::after {
-  --bottom: -10px;
-  --left: -25px;
+  --bottom: 00px;
+  --left: 0px;
 }
 
 .Info__title {
@@ -53,4 +57,45 @@
   grid-auto-rows: minmax(330px, auto);
   gap: 50px;
   z-index: 1;
+}
+
+.Info__gradientCircles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Info__gradientCircles>i {
+  --index: 0;
+  @extend %gradientCircle;
+
+  &:nth-child(1) {
+    --top: 109px;
+    --left: 170px;
+    --size: 84.004px;
+    --rotate: 7.766deg;
+    background: $gradient7;
+    border: 1px solid $gradient7;
+  }
+
+  &:nth-child(2) {
+    --top: -95px;
+    --right: 118px;
+    --size: 151px;
+    --rotate: -25.732deg;
+    background: $gradient8;
+    border: 1px solid $gradient8;
+  }
+
+  &:nth-child(3) {
+    --right: 160px;
+    --bottom: 125px;
+    --size: 131px;
+    --rotate: -25.732deg;
+    --blur: 12px;
+    background: $gradient8;
+    border: 1px solid $gradient8;
+  }
 }

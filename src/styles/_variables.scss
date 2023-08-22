@@ -9,6 +9,8 @@ $gradient3: linear-gradient(171deg, rgba(95, 56, 255, 0.55) 0%, rgba(255, 14, 22
 $gradient4: linear-gradient(171deg, rgba(95, 56, 255, 0.25) 0%, rgba(255, 14, 222, 0.25) 100%);
 $gradient5: linear-gradient(203deg, #323E51 0%, #1D2532 100%);
 $gradient6: radial-gradient(95.39% 95.39% at 50.77% 4.62%, #DDF92C 0%, #8FEC36 44.51%, #00D448 100%);
+$gradient7: radial-gradient(66.01% 76.73% at 65.32% 77.65%, #045DFA 0%, #0FC1D7 83.16%, #06F6C7 100%);
+$gradient8: radial-gradient(95.39% 95.39% at 50.77% 4.62%, #DEA8FF 0%, #9D6AD9 44.51%, #7A2BF6 100%);
 $infoCardFrontBgColor: rgba(51, 62, 81, 0.70);
 $infoCardFrontBlur: 30.5px;
 $infoCardBackBgColor: rgba(51, 62, 81, 0.60);
@@ -33,6 +35,7 @@ $infoCardBackBlur: 27.5px;
 }
 
 %gradientCircle {
+  position: absolute;
   top: var(--top);
   left: var(--left);
   bottom: var(--bottom);

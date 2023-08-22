@@ -33,6 +33,11 @@ const Info = () => {
             </InfoCard>
           </div>
         </div>
+        <div className="Info__gradientCircles">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
       </Container>
     </section>
   );
