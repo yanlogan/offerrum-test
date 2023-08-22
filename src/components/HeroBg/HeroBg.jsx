@@ -4,7 +4,6 @@ import businessman from "../../assets/images/businessman.png";
 import piggy from "../../assets/images/piggy.png";
 import lightning1 from "../../assets/images/lightning-1.svg";
 import lightning2 from "../../assets/images/lightning-2.svg";
-import gradientCircleGreen from "../../assets/images/gradientCircleGreen.svg";
 import money from "../../assets/images/money.png";
 import emoji from "../../assets/images/emoji-hero.png";
 
@@ -12,11 +11,7 @@ const HeroBg = () => {
   return (
     <div className="HeroBg">
       <div className="HeroBg__content">
-        <img
-          src={gradientCircleGreen}
-          alt="gradientCircleGreen"
-          className="HeroBg__gradientCircleGreen"
-        />
+        <span className="HeroBg__gradientCircleGreen"></span>
         <img src={piggy} alt="piggy" className="HeroBg__piggy" />
         <img src={emoji} alt="emoji" className="HeroBg__emoji" />
         <div className="HeroBg__gradient"></div>
