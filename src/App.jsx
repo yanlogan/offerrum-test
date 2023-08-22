@@ -4,7 +4,7 @@ import Info from "./components/Info/Info";
 
 function App() {
   return (
-    <main>
+    <main className="App">
       <Intro />
       <Info />
     </main>
