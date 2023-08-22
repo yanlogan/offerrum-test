@@ -7,11 +7,33 @@
 }
 
 .Info__wrapper {
+  position: relative;
   display: grid;
   justify-content: center;
   padding: 130px 0;
   background: $gradient5;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.Info__wrapper::before {
+  --gradientCircleRadius: 440.008px;
+  --gradientCircleTop: -80px;
+  --gradientCircleLeft: auto;
+  right: -40px;
+  @extend %gradientCircle;
+  background: $gradient4;
+  z-index: 0;
+}
+
+.Info__wrapper::after {
+  --gradientCircleRadius: 440.008px;
+  --gradientCircleTop: auto;
+  bottom: -10px;
+  --gradientCircleLeft: -25px;
+  @extend %gradientCircle;
+  background: $gradient4;
+  z-index: 0;
 }
 
 .Info__title {
@@ -24,9 +46,11 @@
 }
 
 .Info__cards {
+  position: relative;
   display: grid;
   // grid-template-areas: "card-stars card-crazy""card-money card-cool";
   grid-template-columns: repeat(2, 300px);
   grid-auto-rows: minmax(330px, auto);
   gap: 50px;
+  z-index: 1;
 }
