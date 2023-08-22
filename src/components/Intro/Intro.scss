@@ -9,10 +9,14 @@
 }
 
 .Intro::before {
-  --gradientCircleRadius: 414.902px;
-  --gradientCircleTop: -150px;
-  --gradientCircleLeft: 50px;
-  @extend %gradientCircle;
+  --top: -150px;
+  --left: 50px;
+  --size: 414.902px;
+  --blur: 86px;
+  --rotate: 11.969deg;
+  --index: 0;
+  @extend %gradientBackdrop;
+  background: $gradient4;
 }
 
 .Intro__content {

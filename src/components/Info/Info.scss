@@ -16,24 +16,24 @@
   overflow: hidden;
 }
 
-.Info__wrapper::before {
-  --gradientCircleRadius: 440.008px;
-  --gradientCircleTop: -80px;
-  --gradientCircleLeft: auto;
-  right: -40px;
-  @extend %gradientCircle;
+.Info__wrapper::before,
+.Info__wrapper::after {
+  --size: 440.008px;
+  --blur: 86px;
+  --rotate: 11.969deg;
+  --index: 0;
+  @extend %gradientBackdrop;
   background: $gradient4;
-  z-index: 0;
+}
+
+.Info__wrapper::before {
+  --top: -80px;
+  --right: -40px;
 }
 
 .Info__wrapper::after {
-  --gradientCircleRadius: 440.008px;
-  --gradientCircleTop: auto;
-  bottom: -10px;
-  --gradientCircleLeft: -25px;
-  @extend %gradientCircle;
-  background: $gradient4;
-  z-index: 0;
+  --bottom: -10px;
+  --left: -25px;
 }
 
 .Info__title {

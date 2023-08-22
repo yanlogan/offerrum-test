@@ -19,12 +19,14 @@
 }
 
 .HeroBg__gradient {
-  --gradientCircleRadius: 474.935px;
-  --gradientCircleTop: 250px;
-  --gradientCircleLeft: 270px;
+  --size: 474.935px;
+  --top: 250px;
+  --left: 270px;
+  --index: 2;
+  --blur: 86px;
+  --rotate: 11.969deg;
   @extend %gradientCircle;
   background: $gradient3;
-  z-index: 2;
 }
 
 .HeroBg__businessman {
@@ -64,14 +66,12 @@
 }
 
 .HeroBg__gradientCircleGreen {
-  top: 167px;
-  left: 1px;
-  z-index: 2;
-
-  width: 87px;
-  height: 87px;
-  border-radius: 50%;
+  --size: 87px;
+  --top: 167px;
+  --left: 1px;
+  --index: 2;
+  --blur: 2px;
+  --rotate: -25.732deg;
+  @extend %gradientCircle;
   background: $gradient6;
-  filter: blur(2px);
-  transform: rotate(-25.732deg);
 }
