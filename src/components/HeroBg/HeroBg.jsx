@@ -11,7 +11,7 @@ const HeroBg = () => {
   return (
     <div className="HeroBg">
       <div className="HeroBg__content">
-        <span className="HeroBg__gradientCircleGreen"></span>
+        <i className="HeroBg__gradientCircleGreen"></i>
         <img src={piggy} alt="piggy" className="HeroBg__piggy" />
         <img src={emoji} alt="emoji" className="HeroBg__emoji" />
         <div className="HeroBg__gradient"></div>
