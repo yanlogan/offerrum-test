@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./InfoCard.scss";
 
-const InfoCard = ({ image, imageBlurred, text }) => {
+const InfoCard = ({ image, imageBlurred, children }) => {
   return (
     <div className="InfoCard">
       <div className="InfoCard__wrapper">
@@ -20,7 +20,7 @@ const InfoCard = ({ image, imageBlurred, text }) => {
               />
             </div>
           )}
-          <p className="InfoCard__text">{text}</p>
+          <p className="InfoCard__text">{children}</p>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@ const InfoCard = ({ image, imageBlurred, text }) => {
 InfoCard.propTypes = {
   image: PropTypes.node.isRequired,
   imageBlurred: PropTypes.node.isRequired,
-  text: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default InfoCard;
